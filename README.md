@@ -1,0 +1,2 @@
+Dummy Poll Result
+ 
