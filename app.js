@@ -1,8 +1,6 @@
 const express = require('express');
 const bodyParser = require("body-parser"); 
 
-// database connect
-const connection = require('./models/db')
 const route = require("./routes/index")
 const app = express();
 const PORT = process.env.PORT || 2000 
