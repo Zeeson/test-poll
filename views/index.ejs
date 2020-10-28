@@ -9,6 +9,9 @@
   <body>
     <header>
       <a href="/" class="header-logo">Election Results</a>
+      <a href="/" class="header-logo">Polling Units</a>
+      <a href="/lga" class="header-logo">LGA summed total</a>
+      <a href="/new" class="header-logo">New PU Result</a>
     </header>
     <div class="container">
       <div class="container-header">
@@ -16,24 +19,20 @@
       </div>
       <div class="index-table-wrapper">
         <div class="table-head">
-          <span class="id-column">ID</span>
-          <span class="id-column">PU</span>
-          <span class="id-column">Result</span>
+          <span class="id-column">Result_ID</span>
+          <span class="id-column">PU_ID</span>
+          <span class="id-column">Party</span>
+          <span class="id-column">Party_Score</span>
         </div>
-        <!-- Delete the items constant -->
-        <% const items = [
-          {id: 1, name: 'Rano', result: 908},
-          {id: 2, name: 'Ghari', result: 1028},
-          {id: 3, name: 'Gote', result: 2908},
-        ] %>
-        <!-- Delete up until here -->
+
         <ul class="table-body">
           <% items.forEach((item) => { %>
             <li>
               <div class="item-data">
-                <span class="id-column"><%= item.id %></span>
-                <span class="id-column"><%= item.name %></span>
-                <span class="id-column"><%= item.result %></span>
+                <span class="id-column"><%= item.result_id %></span>
+                <span class="id-column"><%= item.polling_unit_uniqueid%></span>
+                <span class="id-column"><%= item.party_abbreviation %></span>
+                <span class="id-column"><%= item.party_score %></span>
               </div>
             </li>
           <% }) %>

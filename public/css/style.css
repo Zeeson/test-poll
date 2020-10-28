@@ -12,20 +12,21 @@ html {
 
 body {
   margin: 0;
-  /*background-color: #f6faff;*/
+  background-color: #90F2B5;
   color: #6c7686;
 }
 
 ul, li {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 a {
   display: block;
   text-decoration: none;
-  color: #2d3133;
+  color: #2d3198;
   font-size: 14px;
 }
 
@@ -124,16 +125,16 @@ header {
 }
 
 .header-logo {
-  margin-left: 56px;
-  font-weight: 600;
-  font-size: 20px;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 16px;
   line-height: 56px;
   color: #6c7686;
   display: inline;
 }
 
 .header-logo:hover {
-  color: #58d2b2;
+  color: green;
 }
 
 /* container ================================ */
@@ -169,19 +170,6 @@ header {
   transition: all 0.3s ease;
 }
 
-.cancel-button {
-  margin-top: 16px;
-  margin-left: 2px;
-  font-weight: 600;
-  color: #bac6d3;
-  text-decoration: underline;
-  display: inline-block;
-}
-
-.cancel-button:hover {
-  color: #80bcff;
-}
-
 .container-header h1 {
   font-size: 24px;
 }
@@ -198,8 +186,10 @@ header {
 }
 
 .id-column {
-  width: 72px;
+  width: 132px;
   text-align: center;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .table-body {
@@ -268,10 +258,32 @@ header {
   color: #80bcff;
 }
 
+/*lga*/
+#select_lga{
+width: 250px;
+height: 40px
+}
+
+.select_party{
+width: 250px;
+height: 40px
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
 /* new, edit ================================ */
 .item-form-wrapper {
   background-color: #ffffff;
-  border: 1px solid #f0f4f9;
+  border: 2px solid #f0f4f9;
   border-radius: 0px 0px 2px 2px;
   padding: 32px;
 }
@@ -284,7 +296,7 @@ header {
 .item-form-wrapper input[type="text"] {
   width: 100%;
   height: 40px;
-  margin-top: 8px;
+  margin-bottom: 18px;
   padding: 12px 16px;
   background-color: #fcfcfd;
   border: 1px solid #bac6d3;
@@ -294,7 +306,7 @@ header {
 }
 
 .item-form-wrapper input[type="submit"] {
-  display: block;
+  /*display: block;*/
   width: 120px;
   height: 45px;
   margin-top: 24px;
