@@ -1,9 +1,9 @@
 // database
   module.exports = {
-    HOST: 'us-cdbr-east-02.cleardb.com',
-    USER: 'b28d90dcbe2070',
-    PASSWORD: 'aece22fe',
-    DB: 'heroku_e99b24947ad9159', 
+    HOST: 'localhost',
+    USER: 'root',
+    PASSWORD: '',   
+    DB: 'bincomphptest', 
     dialect: "mysql",
     pool: {
       max: 5,
